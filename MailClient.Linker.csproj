@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>MailClient.Linker</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <BuildOutputTargetFolder>steps</BuildOutputTargetFolder>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.ILLink.Tasks" Version="8.0.7" ExcludeAssets="all" GeneratePathProperty="true" />
+    <Reference Include="$(PkgMicrosoft_NET_ILLink_Tasks)\tools\net8.0\illink.dll" />
+    <Reference Include="$(PkgMicrosoft_NET_ILLink_Tasks)\tools\net8.0\Mono.Cecil.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="build\MailClient.Linker.props" PackagePath="build\" />
+  </ItemGroup>  
+</Project>

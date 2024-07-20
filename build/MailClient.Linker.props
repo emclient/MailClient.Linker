@@ -1,0 +1,5 @@
+<Project>
+  <ItemGroup>
+    <_TrimmerCustomSteps Include="$(MSBuildThisFileDirectory)..\steps\net8.0\MailClient.Linker.dll" BeforeStep="OutputStep" Type="MailClient.Linker.FixReleaseBlockWhenDelegateIsCollectedStep" />
+  </ItemGroup>
+</Project>
