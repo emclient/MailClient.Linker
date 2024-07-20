@@ -8,6 +8,9 @@
     <Nullable>enable</Nullable>
     <BuildOutputTargetFolder>steps</BuildOutputTargetFolder>
     <NoPackageAnalysis>true</NoPackageAnalysis>
+    <Authors>Filip Navara</Authors>
+    <Company>eM Client s.r.o</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
