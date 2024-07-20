@@ -11,6 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Nerdbank.GitVersioning" PrivateAssets="all" Version="3.6.139" />
     <PackageReference Include="Microsoft.NET.ILLink.Tasks" Version="8.0.7" ExcludeAssets="all" GeneratePathProperty="true" />
     <Reference Include="$(PkgMicrosoft_NET_ILLink_Tasks)\tools\net8.0\illink.dll" />
     <Reference Include="$(PkgMicrosoft_NET_ILLink_Tasks)\tools\net8.0\Mono.Cecil.dll" />
